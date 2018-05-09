@@ -1,0 +1,65 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px purple;
+}
+
+.thanos-button {
+    width: 400px;
+    height: 80px;
+    cursor: pointer;
+    background-color: rgb(122, 75, 122);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.thanos-button:hover {
+    background-color: rgb(150, 84, 150);
+}
+
+.the-entire-universe {
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+
+button {
+    transform: translateY(0)
+}
+
+.doomed-hero {
+    animation: die 5002ms linear 700ms;
+    text-decoration: line-through;
+}
+
+@keyframes die {
+    0% {
+        filter: blur(0);
+        transform: translate(0) scale(1);
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translateY(50px) scale(20);
+        filter: blur(200px);
+        opacity: 0;
+    }
+}
