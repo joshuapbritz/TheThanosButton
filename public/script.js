@@ -7,7 +7,7 @@ window.onload = () => {
     const notThanos = buttons.filter(
         button => !button.classList.contains('thanos-button')
     );
-    const amount = notThanos.length / 2;
+    const amount = Math.round(notThanos.length / 2);
     for (let i = 0; i < amount; i++) {
         const doom = Math.floor(Math.random() * notThanos.length);
         doomed.push(notThanos[doom]);
