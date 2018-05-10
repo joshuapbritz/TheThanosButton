@@ -11,7 +11,6 @@ window.onload = () => {
     for (let i = 0; i < amount; i++) {
         const doom = Math.floor(Math.random() * notThanos.length);
         doomed.push(notThanos[doom]);
-        console.log(`${notThanos[doom].textContent}: ${i} | ${doom}`);
         notThanos.splice(doom, 1);
     }
 
